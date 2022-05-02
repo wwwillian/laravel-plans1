@@ -1,0 +1,35 @@
+{
+    "name": "wwwillian/laravel-plans",
+    "description": "Create SAAS plans, with specific features for clients",
+    "type": "library",
+    "require": {
+        "laravel/framework": "5.8.*",
+        "php": "^7.1.3"
+    },
+    "authors": [
+        {
+            "name": "Matheus",
+            "email": "connect.malves@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MsAlvexx\\LaravelPlans\\": "src/",
+            "MsAlvexx\\LaravelPlans\\Models\\": "src/models",
+            "MsAlvexx\\LaravelPlans\\Providers\\": "src/providers",
+            "MsAlvexx\\LaravelPlans\\Migrations\\": "src/migrations",
+            "MsAlvexx\\LaravelPlans\\Traits\\": "src/traits",
+            "MsAlvexx\\LaravelPlans\\Exceptions\\": "src/exceptions",
+            "MsAlvexx\\LaravelPlans\\Contracts\\": "src/contracts",
+            "MsAlvexx\\LaravelPlans\\Middlewares\\": "src/middlewares",
+            "MsAlvexx\\LaravelPlans\\Filters\\": "src/filters"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MsAlvexx\\LaravelPlans\\Providers\\PlanServiceProvider"
+            ]
+        }
+    }
+}
