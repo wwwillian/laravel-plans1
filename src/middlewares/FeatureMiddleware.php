@@ -1,9 +1,9 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Middlewares;
+namespace Wwwillian\LaravelPlans\Middlewares;
 
 use Closure;
-use MsAlvexx\LaravelPlans\Exceptions\UnauthorizedException;
+use Wwwillian\LaravelPlans\Exceptions\UnauthorizedException;
 
 class FeatureMiddleware
 {

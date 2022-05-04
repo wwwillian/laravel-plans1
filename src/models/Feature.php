@@ -1,16 +1,16 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Models;
+namespace Wwwillian\LaravelPlans\Models;
 
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;
-use MsAlvexx\LaravelPlans\Traits\HasPlans;
-use MsAlvexx\LaravelPlans\Providers\FeatureRegistrar;
+use Wwwillian\LaravelPlans\Traits\HasPlans;
+use Wwwillian\LaravelPlans\Providers\FeatureRegistrar;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use MsAlvexx\LaravelPlans\Exceptions\FeatureAlreadyExists;
-use MsAlvexx\LaravelPlans\Exceptions\FeatureDoesNotExists;
-use MsAlvexx\LaravelPlans\Contracts\Feature as FeatureContract;
+use Wwwillian\LaravelPlans\Exceptions\FeatureAlreadyExists;
+use Wwwillian\LaravelPlans\Exceptions\FeatureDoesNotExists;
+use Wwwillian\LaravelPlans\Contracts\Feature as FeatureContract;
 
 class Feature extends Model implements FeatureContract
 {
@@ -53,9 +53,9 @@ class Feature extends Model implements FeatureContract
      *
      * @param string $name
      *
-     * @throws \MsAlvexx\LaravelPlans\Exceptions\FeatureDoesNotExist
+     * @throws \Wwwillian\LaravelPlans\Exceptions\FeatureDoesNotExist
      *
-     * @return \MsAlvexx\LaravelPlans\Contracts\Feature
+     * @return \Wwwillian\LaravelPlans\Contracts\Feature
      */
     public static function findByName(string $name): FeatureContract
     {
@@ -72,9 +72,9 @@ class Feature extends Model implements FeatureContract
      *
      * @param int $id
      *
-     * @throws \MsAlvexx\LaravelPlans\Exceptions\FeatureDoesNotExist
+     * @throws \Wwwillian\LaravelPlans\Exceptions\FeatureDoesNotExist
      *
-     * @return \MsAlvexx\LaravelPlans\Contracts\Feature
+     * @return \Wwwillian\LaravelPlans\Contracts\Feature
      */
     public static function findById(int $id): FeatureContract
     {
@@ -92,7 +92,7 @@ class Feature extends Model implements FeatureContract
      *
      * @param string $name
      *
-     * @return \MsAlvexx\LaravelPlans\Contracts\Feature
+     * @return \Wwwillian\LaravelPlans\Contracts\Feature
      */
     public static function findOrCreate(string $name): FeatureContract
     {

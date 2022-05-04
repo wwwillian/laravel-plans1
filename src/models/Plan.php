@@ -1,13 +1,13 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Models;
+namespace Wwwillian\LaravelPlans\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use MsAlvexx\LaravelPlans\Traits\HasFeatures;
-use MsAlvexx\LaravelPlans\Exceptions\RoleDoesNotExist;
-use MsAlvexx\LaravelPlans\Exceptions\RoleAlreadyExists;
-use MsAlvexx\LaravelPlans\Contracts\Plan as PlanContract;
-use MsAlvexx\LaravelPlans\Traits\RefreshesFeatureCache;
+use Wwwillian\LaravelPlans\Traits\HasFeatures;
+use Wwwillian\LaravelPlans\Exceptions\RoleDoesNotExist;
+use Wwwillian\LaravelPlans\Exceptions\RoleAlreadyExists;
+use Wwwillian\LaravelPlans\Contracts\Plan as PlanContract;
+use Wwwillian\LaravelPlans\Traits\RefreshesFeatureCache;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
@@ -61,9 +61,9 @@ class Plan extends Model implements PlanContract
      *
      * @param string $name
      *
-     * @return \MsAlvexx\LaravelPlans\Contracts\Plan|\MsAlvexx\LaravelPlans\Models\Plan
+     * @return \Wwwillian\LaravelPlans\Contracts\Plan|\Wwwillian\LaravelPlans\Models\Plan
      *
-     * @throws \MsAlvexx\LaravelPlans\Exceptions\PlanDoesNotExist
+     * @throws \Wwwillian\LaravelPlans\Exceptions\PlanDoesNotExist
      */
     public static function findByName(string $name): PlanContract
     {
@@ -92,7 +92,7 @@ class Plan extends Model implements PlanContract
      *
      * @param string $name
      *
-     * @return \MsAlvexx\LaravelPlans\Contracts\Plan
+     * @return \Wwwillian\LaravelPlans\Contracts\Plan
      */
     public static function findOrCreate(string $name): PlanContract
     {

@@ -1,14 +1,14 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Providers;
+namespace Wwwillian\LaravelPlans\Providers;
 
 use Illuminate\Cache\CacheManager;
 use Illuminate\Support\Collection;
-use MsAlvexx\LaravelPlans\Contracts\Plan;
+use Wwwillian\LaravelPlans\Contracts\Plan;
 use Illuminate\Contracts\Auth\Access\Gate;
-use MsAlvexx\LaravelPlans\Contracts\Feature;
+use Wwwillian\LaravelPlans\Contracts\Feature;
 use Illuminate\Contracts\Auth\Access\Authorizable;
-use MsAlvexx\LaravelPlans\Exceptions\FeatureDoesNotExist;
+use Wwwillian\LaravelPlans\Exceptions\FeatureDoesNotExist;
 
 class FeatureRegistrar
 {
@@ -146,7 +146,7 @@ class FeatureRegistrar
     /**
      * Get an instance of the feature class.
      *
-     * @return \MsAlvexx\LaravelPlans\Contracts\Feature
+     * @return \Wwwillian\LaravelPlans\Contracts\Feature
      */
     public function getFeatureClass(): Feature
     {
@@ -156,7 +156,7 @@ class FeatureRegistrar
     /**
      * Get an instance of the plan class.
      *
-     * @return \MsAlvexx\LaravelPlans\Contracts\Plan
+     * @return \Wwwillian\LaravelPlans\Contracts\Plan
      */
     public function getPlanClass(): Plan
     {

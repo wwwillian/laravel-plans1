@@ -1,6 +1,6 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Exceptions;
+namespace Wwwillian\LaravelPlans\Exceptions;
 
 use InvalidArgumentException;
 

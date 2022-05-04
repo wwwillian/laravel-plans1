@@ -1,8 +1,8 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Traits;
+namespace Wwwillian\LaravelPlans\Traits;
 
-use MsAlvexx\LaravelPlans\Providers\FeatureRegistrar;
+use Wwwillian\LaravelPlans\Providers\FeatureRegistrar;
 
 trait RefreshesFeatureCache
 {

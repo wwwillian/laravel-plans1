@@ -4,11 +4,11 @@ return [
 
     'models' => [
 
-        'model' => ConnectMalves\MultiTenantDB\Models\Company::class,
+        'model' => Wwwillian\MultiTenantDB\Models\Company::class,
 
-        'feature' => MsAlvexx\LaravelPlans\Models\Feature::class,
+        'feature' => Wwwillian\LaravelPlans\Models\Feature::class,
 
-        'plan' => MsAlvexx\LaravelPlans\Models\Plan::class,
+        'plan' => Wwwillian\LaravelPlans\Models\Plan::class,
 
     ],
 
@@ -32,7 +32,7 @@ return [
 
         'expiration_time' => \DateInterval::createFromDateString('24 hours'),
 
-        'key' => 'msalvexx.plans.cache',
+        'key' => 'wwwillian.plans.cache',
 
         'model_key' => 'name',
 

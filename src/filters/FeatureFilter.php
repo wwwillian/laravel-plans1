@@ -1,6 +1,6 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Filters;
+namespace Wwwillian\LaravelPlans\Filters;
 
 use Illuminate\Contracts\Auth\Access\Gate;
 use JeroenNoten\LaravelAdminLte\Menu\Builder;

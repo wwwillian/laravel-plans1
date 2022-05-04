@@ -1,13 +1,13 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Traits;
+namespace Wwwillian\LaravelPlans\Traits;
 
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Builder;
-use MsAlvexx\LaravelPlans\Providers\FeatureRegistrar;
-use MsAlvexx\LaravelPlans\Contracts\Feature;
+use Wwwillian\LaravelPlans\Providers\FeatureRegistrar;
+use Wwwillian\LaravelPlans\Contracts\Feature;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
-use MsAlvexx\LaravelPlans\Exceptions\FeatureDoesNotExist;
+use Wwwillian\LaravelPlans\Exceptions\FeatureDoesNotExist;
 
 trait HasFeatures
 {
@@ -36,7 +36,7 @@ trait HasFeatures
     /**
      * Determine if the model may perform the given feature.
      *
-     * @param string|int|\MsAlvexx\LaravelPlans\Contracts\Feature $feature
+     * @param string|int|\Wwwillian\LaravelPlans\Contracts\Feature $feature
      *
      * @return bool
      * @throws FeatureDoesNotExist
@@ -63,7 +63,7 @@ trait HasFeatures
     /**
      * An alias to hasFeature(), but avoids throwing an exception.
      *
-     * @param string|int|\MsAlvexx\LaravelPlans\Contracts\Feature $feature
+     * @param string|int|\Wwwillian\LaravelPlans\Contracts\Feature $feature
      *
      * @return bool
      */
@@ -125,7 +125,7 @@ trait HasFeatures
     /**
      * Determine if the model has, via plan, the given feature.
      *
-     * @param \MsAlvexx\LaravelPlans\Contracts\Feature $feature
+     * @param \Wwwillian\LaravelPlans\Contracts\Feature $feature
      *
      * @return bool
      */
@@ -193,7 +193,7 @@ trait HasFeatures
     /**
      * Grant the given feature(s) to a plan.
      *
-     * @param string|array|\MsAlvexx\LaravelPlans\Contracts\Feature|\Illuminate\Support\Collection $features
+     * @param string|array|\Wwwillian\LaravelPlans\Contracts\Feature|\Illuminate\Support\Collection $features
      *
      * @return $this
      */
@@ -243,7 +243,7 @@ trait HasFeatures
     /**
      * Remove all current features and set the given ones.
      *
-     * @param string|array|\MsAlvexx\LaravelPlans\Contracts\Feature|\Illuminate\Support\Collection $features
+     * @param string|array|\Wwwillian\LaravelPlans\Contracts\Feature|\Illuminate\Support\Collection $features
      *
      * @return $this
      */
@@ -257,7 +257,7 @@ trait HasFeatures
     /**
      * Revoke the given feature.
      *
-     * @param \MsAlvexx\LaravelPlans\Contracts\Feature|\MsAlvexx\LaravelPlans\Contracts\Feature[]|string|string[] $feature
+     * @param \Wwwillian\LaravelPlans\Contracts\Feature|\Wwwillian\LaravelPlans\Contracts\Feature[]|string|string[] $feature
      *
      * @return $this
      */
@@ -278,9 +278,9 @@ trait HasFeatures
     }
 
     /**
-     * @param string|array|\MsAlvexx\LaravelPlans\Contracts\Feature|\Illuminate\Support\Collection $features
+     * @param string|array|\Wwwillian\LaravelPlans\Contracts\Feature|\Illuminate\Support\Collection $features
      *
-     * @return \MsAlvexx\LaravelPlans\Contracts\Feature|\MsAlvexx\LaravelPlans\Contracts\Feature[]|\Illuminate\Support\Collection
+     * @return \Wwwillian\LaravelPlans\Contracts\Feature|\Wwwillian\LaravelPlans\Contracts\Feature[]|\Illuminate\Support\Collection
      */
     protected function getStoredFeature($features)
     {

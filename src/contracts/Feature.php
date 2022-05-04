@@ -1,6 +1,6 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Contracts;
+namespace Wwwillian\LaravelPlans\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
@@ -18,7 +18,7 @@ interface Feature
      *
      * @param string $name
      *
-     * @throws \MsAlvexx\LaravelPlans\Exceptions\FeatureDoesNotExist
+     * @throws \Wwwillian\LaravelPlans\Exceptions\FeatureDoesNotExist
      *
      * @return Feature
      */
@@ -29,7 +29,7 @@ interface Feature
      *
      * @param int $id
      *
-     * @throws \MsAlvexx\LaravelPlans\Exceptions\FeatureDoesNotExist
+     * @throws \Wwwillian\LaravelPlans\Exceptions\FeatureDoesNotExist
      *
      * @return Feature
      */

@@ -1,10 +1,10 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Middlewares;
+namespace Wwwillian\LaravelPlans\Middlewares;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;
-use MsAlvexx\LaravelPlans\Exceptions\UnauthorizedException;
+use Wwwillian\LaravelPlans\Exceptions\UnauthorizedException;
 
 class PlanMiddleware
 {

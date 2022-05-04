@@ -1,10 +1,10 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Providers;
+namespace Wwwillian\LaravelPlans\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Compilers\BladeCompiler;
-use MsAlvexx\LaravelPlans\Providers\FeatureRegistrar;
+use Wwwillian\LaravelPlans\Providers\FeatureRegistrar;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Routing\Route;
 

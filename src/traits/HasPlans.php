@@ -1,11 +1,11 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Traits;
+namespace Wwwillian\LaravelPlans\Traits;
 
 use Illuminate\Support\Collection;
-use MsAlvexx\LaravelPlans\Contracts\Plan;
+use Wwwillian\LaravelPlans\Contracts\Plan;
 use Illuminate\Database\Eloquent\Builder;
-use MsAlvexx\LaravelPlans\Providers\FeatureRegistrar;
+use Wwwillian\LaravelPlans\Providers\FeatureRegistrar;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 
@@ -56,7 +56,7 @@ trait HasPlans
     /**
      * Assign the given plan to the model.
      *
-     * @param array|string|\MsAlvexx\LaravelPlans\Contracts\Plan $plan
+     * @param array|string|\Wwwillian\LaravelPlans\Contracts\Plan $plan
      *
      * @return $this
      */
@@ -82,7 +82,7 @@ trait HasPlans
     /**
      * Change current plan to another.
      *
-     * @param array|\MsAlvexx\LaravelPlans\Contracts\Plan|string $plan
+     * @param array|\Wwwillian\LaravelPlans\Contracts\Plan|string $plan
      *
      * @return $this
      */
@@ -96,7 +96,7 @@ trait HasPlans
     /**
      * Determine if the model has the given plan.
      *
-     * @param string|\MsAlvexx\LaravelPlans\Contracts\Plan
+     * @param string|\Wwwillian\LaravelPlans\Contracts\Plan
      *
      * @return bool
      */
@@ -120,7 +120,7 @@ trait HasPlans
     /**
      * Determine if the model has (one of) the given plan(s).
      *
-     * @param string|int|array|\MsAlvexx\LaravelPlans\Contracts\Plan|\Illuminate\Support\Collection $plan
+     * @param string|int|array|\Wwwillian\LaravelPlans\Contracts\Plan|\Illuminate\Support\Collection $plan
      *
      * @return bool
      */

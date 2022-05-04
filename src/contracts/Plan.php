@@ -1,6 +1,6 @@
 <?php
 
-namespace MsAlvexx\LaravelPlans\Contracts;
+namespace Wwwillian\LaravelPlans\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
@@ -18,9 +18,9 @@ interface Plan
      *
      * @param string $name
      *
-     * @return \MsAlvexx\LaravelPlans\Contracts\Plan
+     * @return \Wwwillian\LaravelPlans\Contracts\Plan
      *
-     * @throws \MsAlvexx\LaravelPlans\Exceptions\PlanDoesNotExist
+     * @throws \Wwwillian\LaravelPlans\Exceptions\PlanDoesNotExist
      */
     public static function findByName(string $name): self;
 
@@ -29,9 +29,9 @@ interface Plan
      *
      * @param int $id
      *
-     * @return \MsAlvexx\LaravelPlans\Contracts\Plan
+     * @return \Wwwillian\LaravelPlans\Contracts\Plan
      *
-     * @throws \MsAlvexx\LaravelPlans\Exceptions\PlanDoesNotExist
+     * @throws \Wwwillian\LaravelPlans\Exceptions\PlanDoesNotExist
      */
     public static function findById(int $id): self;
 
@@ -40,14 +40,14 @@ interface Plan
      *
      * @param string $name
      *
-     * @return \MsAlvexx\LaravelPlans\Contracts\Plan
+     * @return \Wwwillian\LaravelPlans\Contracts\Plan
      */
     public static function findOrCreate(string $name): self;
 
     /**
      * Determine if the user may perform the given feature.
      *
-     * @param string|\MsAlvexx\LaravelPlans\Contracts\Feature $feature
+     * @param string|\Wwwillian\LaravelPlans\Contracts\Feature $feature
      *
      * @return bool
      */
