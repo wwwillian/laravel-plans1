@@ -14,21 +14,21 @@
     ],
     "autoload": {
         "psr-4": {
-            "MsAlvexx\\LaravelPlans\\": "src/",
-            "MsAlvexx\\LaravelPlans\\Models\\": "src/models",
-            "MsAlvexx\\LaravelPlans\\Providers\\": "src/providers",
-            "MsAlvexx\\LaravelPlans\\Migrations\\": "src/migrations",
-            "MsAlvexx\\LaravelPlans\\Traits\\": "src/traits",
-            "MsAlvexx\\LaravelPlans\\Exceptions\\": "src/exceptions",
-            "MsAlvexx\\LaravelPlans\\Contracts\\": "src/contracts",
-            "MsAlvexx\\LaravelPlans\\Middlewares\\": "src/middlewares",
-            "MsAlvexx\\LaravelPlans\\Filters\\": "src/filters"
+            "Wwwillian\\LaravelPlans\\": "src/",
+            "Wwwillian\\LaravelPlans\\Models\\": "src/models",
+            "Wwwillian\\LaravelPlans\\Providers\\": "src/providers",
+            "Wwwillian\\LaravelPlans\\Migrations\\": "src/migrations",
+            "Wwwillian\\LaravelPlans\\Traits\\": "src/traits",
+            "Wwwillian\\LaravelPlans\\Exceptions\\": "src/exceptions",
+            "Wwwillian\\LaravelPlans\\Contracts\\": "src/contracts",
+            "Wwwillian\\LaravelPlans\\Middlewares\\": "src/middlewares",
+            "Wwwillian\\LaravelPlans\\Filters\\": "src/filters"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "MsAlvexx\\LaravelPlans\\Providers\\PlanServiceProvider"
+                "Wwwillian\\LaravelPlans\\Providers\\PlanServiceProvider"
             ]
         }
     }
